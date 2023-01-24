@@ -31,7 +31,7 @@ main {
   padding-top: 7rem;
 }
 
-/* HEADING */
+/*#################### HEADING ############ */
 
 .title h1 {
   font-family: "PT Serif", serif;
@@ -51,13 +51,12 @@ main {
 .info p {
   font-size: 1.4rem;
   font-weight: 400;
-  /* text-align: start; */
 
   padding-right: 1.8rem;
   margin-bottom: 3.8rem;
 }
 
-/* IMAGES */
+/*############# CARDS IMAGES ###############*/
 
 figure {
   display: flex;
@@ -79,10 +78,8 @@ figure .card:nth-child(even) {
 .profile {
   display: flex;
   flex-direction: column;
-  /* gap: 0.5rem; */
 }
 .profile img {
-  /* width: 13.8rem; */
   width: 100%;
 }
 
@@ -99,10 +96,9 @@ figure .card:nth-child(even) {
   font-weight: 400;
   text-transform: uppercase;
   writing-mode: vertical-lr;
-  /* text-orientation: sideways; */
 }
 
-/* Footer  */
+/*################## Footer ##############  */
 
 footer {
   position: relative;
@@ -122,7 +118,7 @@ footer span {
   font-weight: 700;
 }
 
-/* RESPONSIVE */
+/*###################### RESPONSIVE ################ */
 
 @media (min-width: 768px) {
   /* TABLET - MEDIUM SCREEN */
@@ -132,6 +128,7 @@ footer span {
 
   .heading {
     display: flex;
+    justify-content: space-between;
   }
   .title,
   .info {
@@ -145,6 +142,10 @@ footer span {
     max-width: 924px;
     margin-inline: auto;
     padding: 11rem 0 0;
+  }
+
+  .heading {
+    justify-content: flex-start;
   }
 
   .info h3 {
